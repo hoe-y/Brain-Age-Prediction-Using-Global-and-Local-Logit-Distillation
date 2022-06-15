@@ -69,13 +69,13 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch \
 
 Evaluation Metrics : MAE
 
-SetUp  | Compression Type  |  Teacher Network  | Student Network  |  # of params teacher  |  # of params student  
+Setup  | Compression Type  |  Teacher Network  | Student Network  |  # of params teacher  |  # of params student  
 :---:|:---:|:---:|:---:|:---:|:---:|
 (a)  | Depth  |  ResNet 50  | ResNet 18  |  46.715 M  |  33.327 M
 (b)  | Depth  |  ResNet 101  | ResNet 50  |  85.761 M  |  46.715 M
 
 
-SetUp  | Teacher  |  Baseline  | Ours  
+Setup  | Teacher  |  Baseline  | Ours  
 :---:|:---:|:---:|:---:
 (a)  | 2.85 |  2.89  | 2.68  
 (b)  | 2.64  |  2.85  | 2.75  
