@@ -11,10 +11,7 @@ import torch.backends.cudnn as cudnn
 from apex import amp
 from torch.cuda.amp import autocast
 from args import get_parser
-from models.dbn import DBN
-from models.sfcn import SFCN
-from models.vgg import vgg16_bn
-from models.densenet import densenet121
+
 from models.resnet_gld import resnet18, resnet50, resnet101, resnet152, resnet200
 
 from torch.utils.data import DataLoader
@@ -69,8 +66,8 @@ def main():
     main_worker(config, logger)
 
 def main_worker(config, logger):
-    model_names = ["resnet18", "resnet50", "resnet101", "resnet152", "resnet200", "vgg", "dense121", "sfcn", "dbn"]
-    models = [resnet18, resnet50, resnet101, resnet152, resnet200, vgg16_bn, densenet121, SFCN, DBN]
+    model_names = ["resnet18", "resnet50", "resnet101", "resnet152", "resnet200"]
+    models = [resnet18, resnet50, resnet101, resnet152, resnet200]
 
     best_acc1 = 99.0
 
