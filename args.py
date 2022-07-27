@@ -1,7 +1,7 @@
 import argparse
 
 def get_parser():
-    model_names = ["resnet18", "resnet50", "resnet101", "resnet152", "resnet200","vgg", "dense121", "sfcn", "dbn"]
+    model_names = ["resnet18", "resnet50", "resnet101", "resnet152", "resnet200"]
 
     parser = argparse.ArgumentParser(description='PyTorch ImageNet Training')
     parser.add_argument('--data', metavar='DIR', default='/path/to/data', help='path to dataset')
