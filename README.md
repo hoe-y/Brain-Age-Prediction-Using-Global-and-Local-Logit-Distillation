@@ -61,7 +61,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python -m torch.distributed.launch \
                         --arch resnet18 \
                         --data <directory_of_dataset> \
                         --t_arch resnet50 \
-                        --teacher_path <path_of_pretrained_teacher_model>
+                        --teacher_path <path_of_pretrained_teacher_model> \
                         --save_root <path_to_save> 
 ```
 
